@@ -11,9 +11,8 @@ public class BasePage {
 
 @BeforeMethod(alwaysRun = true)
   public void beforeMethod() {
-//	  System.setProperty("webdriver.chrome.driver", "/Users/sprasanna/Downloads/selenium-2.44.0/chromedriver");
+	//Runs on firefox.
 	  driver = new FirefoxDriver();
-	  System.out.println(driver);
 	  driver.manage().deleteAllCookies();
       driver.manage().window().maximize();
       driver.get("https://login.xero.com/");
